@@ -1,0 +1,73 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+*
+
+#navigation{
+    background-color:#368B85 ;
+    width:200px ;
+    height:100% ;
+    position: fixed;
+    left: -200px;
+    transition: all 400ms linear;
+    list-style:none;
+    text-decoration: none;
+}
+
+#navigation ul li{
+    color: black;
+    list-style: none;
+    padding: 15px 9px;
+    border-bottom: 1px solid white;
+    text-decoration: none;
+}
+
+#navigation .toggle{
+    position: absolute;
+    left: 230px;
+    top: 20px;
+
+}
+
+#navigation .toggle span{
+    width: 30px;
+    height: 5px;
+    background-color:#0F52BA;
+    display: block;
+    margin: 5px 0px;
+}
+
+body{
+    background-image: url(image/windows.png);
+    background-size: cover;
+    
+}
+
+#navigation.active{
+    left: 0px;
+}
+#navigation ul li:hover{
+    background-color:#053742;
+}
+
+#navigation ul li a{
+    color: honeydew;
+    text-decoration: none;
+    
+}
+
+#navigation ul ul{
+    display:none;
+}
+
+#navigation ul li:hover>ul{
+    background-color:green; 
+    display: block;
+    margin-left:192px;
+    position: absolute;
+    top:100;
+}
+
+
